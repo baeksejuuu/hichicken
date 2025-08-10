@@ -1,0 +1,72 @@
+@font-face { 
+  font-family: 'JUST Sans ExBold';
+  src: url('fonts/JUST Sans ExBold.otf') format('opentype');
+}
+
+@font-face { 
+  font-family: 'JUST Sans Regular';
+  src: url('fonts/JUST Sans Regular.otf') format('opentype');
+}
+
+body {
+  background: linear-gradient(135deg, #fbd6ec, #e5d4ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'JUST Sans Regular', sans-serif;
+}
+
+h2 {
+  font-family: 'JUST Sans ExBold', sans-serif;
+  color: #482D6A;
+  text-align: center;
+  margin: 1em;
+  padding: 0 1em;
+  font-size: 1.4rem;
+}
+
+.game-container {
+  background: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 95%;
+  max-width: 700px;
+}
+
+canvas {
+  background: url("images/backgound1.gif") center/cover no-repeat;
+  border: 3px solid #f7c9e1;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+}
+
+#message {
+  font-size: 1.2rem;
+  color: #6a336d;
+  margin-top: 10px;
+  font-family: 'JUST Sans ExBold', sans-serif;
+}
+
+.back-btn {
+  margin-top: 12px;
+  padding: 8px 20px;
+  background: #fff0f9;
+  border: 2px solid #f7c9e1;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #6a336d;
+  transition: all .3s ease;
+}
+
+.back-btn:hover {
+  background: #f7c9e1;
+  color: white;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="icon" href="https://i.ibb.co.com/hXZsYxZ/heart.png">
+  <title>Polaroids</title>
+  <link rel="stylesheet" href="album.css" />
+</head>
+<body>
+
+  <h4>a little collection so far</h4>
+  
+  <h3>(click a polaroid)</h3>
+
+
+  <div class="photos">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/rahhhh/1.jpg" alt="front">
+        </div>
+        <div class="flip-card-back">
+          <p>Fluffy cheeks</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/rahhhh/4.jpg" alt="front">
+        </div>
+        <div class="flip-card-back">
+          <p>Pudding cheeks</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/rahhhh/3.jpg" alt="front">
+        </div>
+        <div class="flip-card-back">
+          <p>Sleep well<br>5555555</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/rahhhh/2.jpg" alt="front">
+        </div>
+        <div class="flip-card-back">
+          <p>How cute</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/rahhhh/5.jpg" alt="front">
+        </div>
+        <div class="flip-card-back">
+          <p>A kid</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/rahhhh/6.jpg" alt="front">
+        </div>
+        <div class="flip-card-back">
+          <p>You look really pretty</p>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+  <button onclick="window.location.href = 'index.html';">back to home</button>
+
+<script>
+  document.querySelectorAll('.flip-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const alreadyFlipped = card.classList.contains('flipped');
+      document.querySelectorAll('.flip-card').forEach(c => c.classList.remove('flipped'));
+      if (!alreadyFlipped) {
+        card.classList.add('flipped');
+        setTimeout(() => {
+          card.classList.remove('flipped');
+        }, 2000);
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>

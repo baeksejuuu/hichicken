@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Letter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="https://i.ibb.co.com/hXZsYxZ/heart.png">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <h1>Made it here</h1>
+
+  <div class="click-to-play">tap to play music ‹𝟹</div>
+  <button onclick="toggleMusic()" id="musicBtn">₊˚⊹♡ play</button>
+
+  <audio id="bgmusic" loop>
+    <source src="images/about you.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="love-letter">
+    <p><b>We've been dating for a year now</b></p>
+    <p>I may not say it so often, but please know that I love you. Just know that I remain profoundly grateful for all you've done for the two of us.</p>
+    <p>You've always done well, even when things got tough. And in everything, you have me.</p>
+    <p>Wishing you excellence on your exams. Always rooting for you.</p>
+    <p><br>With love,</p>
+    <p>Duck</p>
+  </div>
+
+  <div class="go-back">
+    <button onclick="window.location.href='index.html';">back to home</button>
+  </div>
+
+  <script>
+    const music = document.getElementById('bgmusic');
+    const musicBtn = document.getElementById('musicBtn');
+
+    function toggleMusic() {
+      if (music.paused) {
+        music.play();
+        musicBtn.textContent = '₊˚⊹♡ pause';
+      } else {
+        music.pause();
+        musicBtn.textContent = '₊˚⊹♡ play';
+      }
+    }
+  </script>
+
+</body>
+</html>
